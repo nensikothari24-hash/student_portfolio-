@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register - Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <a href="auth.html" class="brand-logo">
+        <span class="logo-badge">NK</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="auth.html" class="active-link">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Auth Box Container -->
+  <main class="section page-container flex-center">
+    <div class="auth-box">
+
+      <!-- Form Switcher -->
+      <div class="auth-toggle-btns">
+        <button id="loginTab" class="toggle-btn active">Login</button>
+        <button id="registerTab" class="toggle-btn">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form active-form">
+        <h2>Welcome Back</h2>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" required placeholder="student@example.com">
+        </div>
+        <div class="form-group password-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-wrapper">
+            <input type="password" id="loginPassword" required placeholder="Enter password">
+            <button type="button" class="toggle-password" data-target="loginPassword">👁</button>
+          </div>
+        </div>
+        <button type="submit" class="btn full-width-btn">Login</button>
+        <p id="loginMessage" class="form-status"></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="auth-form hidden-form">
+        <h2>Create Account</h2>
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" required placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email Address</label>
+          <input type="email" id="regEmail" required placeholder="student@example.com">
+        </div>
+        <div class="form-group password-group">
+          <label for="regPassword">Password</label>
+          <div class="input-wrapper">
+            <input type="password" id="regPassword" required placeholder="At least 6 characters">
+            <button type="button" class="toggle-password" data-target="regPassword">👁</button>
+          </div>
+        </div>
+        <div class="form-group password-group">
+          <label for="regConfirmPassword">Confirm Password</label>
+          <div class="input-wrapper">
+            <input type="password" id="regConfirmPassword" required placeholder="Re-enter password">
+            <button type="button" class="toggle-password" data-target="regConfirmPassword">👁</button>
+          </div>
+        </div>
+        <button type="submit" class="btn full-width-btn">Register</button>
+        <p id="registerMessage" class="form-status"></p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Portfolio. Built with HTML, CSS, & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

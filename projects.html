@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-badge">NK</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html" class="active-link">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li id="authNavContainer"><a href="auth.html">Login</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section page-container">
+    <h2>Detailed Project Showcase</h2>
+
+    <!-- Category Filter -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="web">HTML/CSS</button>
+    </div>
+
+    <div class="projects-grid" id="projectGrid">
+      
+      <div class="project-card" data-category="js">
+        <h3>College Library Management Web App</h3>
+        <p>A web application engineered to track library books, manage borrow status states, validate inputs, and preserve data utilizing browser <code>localStorage</code>.</p>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS Flexbox</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Multi-Page Responsive Portfolio</h3>
+        <p>A multi-page site featuring responsive flex and grid layouts, mobile navigation drawers, dynamic project filtering, and client authentication handling.</p>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <h3>Client-Side Form Validator & Auth Module</h3>
+        <p>An authentication system providing real-time text input checking, regex format matching, password view toggle switches, and user account storage.</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">DOM Manipulation</span>
+          <span class="tag">Web Storage</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Portfolio. Built with HTML, CSS, & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
